@@ -1,0 +1,59 @@
+ul {
+	list-style: none;
+}
+#table {
+	width: 650px;
+	height: 300px;
+	background-color: green;
+	border : 6px groove yellow;
+	border-radius: 29%;
+
+}
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.card {
+	display: inline-block;
+	width: 100px;
+	height: 190px;
+	border-radius: 7%;
+	border: 2px double black;
+	transition : all 1s;
+	background-color: white;
+	margin-left: 60px;
+	margin-top: 40px;
+	position: absolute;
+	transition: transform 1s ease;
+	transform: translateX(0);
+}
+.one{
+	transform: translateX(0px);
+}
+.two{
+	transform: translateX(200px);
+}
+.three{
+	transform: translateX(400px);
+}
+#ball {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: red;
+	transition: transform 1s ease;
+	transform: translateY(0);
+	position: absolute;
+	left: 720px;
+	bottom: -20px;
+	text-align: center;
+	line-height: 24px;
+}
+#ball.active{
+	transform: translateY(-250px);
+}
+#ball.fadeOut{
+	opacity: 0;
+}
